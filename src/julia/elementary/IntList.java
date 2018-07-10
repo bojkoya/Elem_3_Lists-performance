@@ -1,0 +1,30 @@
+package julia.elementary;
+
+public interface IntList {
+
+    void add(int element);
+
+    void add(int index, int element);
+
+    void clear();
+
+    boolean contains(int value);
+
+    int get(int index);
+
+    boolean isEmpty();
+
+    boolean remove(int index);
+
+    boolean removeElement(int element);
+
+    void set(int index, int element);
+
+    int size();
+
+    void checkIndex(int index);
+
+    int[] makeArrayFromIntList(IntList list);
+
+    IntList makeIntListFromArray(int[] array);
+}
